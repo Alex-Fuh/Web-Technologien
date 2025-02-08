@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Neues Tutorial</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="assets/img/Logo.png"
+        alt="Logo der Webseite."
+        width="80"
+        height="50"
+      />
+      <h1>Web-Entwicklung</h1>
+    </header>
+    <nav>
+      <a href="list.html">Liste der Kategorien:</a>
+      <a href="tutorials/HTML-tutorials.html">Tutorials von HTML</a>
+      <a href="tutorial/HTML-tutorial1.html"> HTML Tutorial 1</a>
+      <a href="form.html">Neues Tutorial erstellen</a>
+    </nav>
+    <main>
+      <form
+        action="https://labs.inf.fh-dortmund.de/tutorialService/testCreateTutorial.php"
+        method="GET"
+      >
+        <p>
+          <label
+            >Titel:
+            <input
+              type="text"
+              required
+              minlength="4"
+              maxlength="20"
+              pattern="[A-Z][a-z]*"
+              placeholder="HTML - Der perfekte Einstieg"
+          /></label>
+        </p>
+        <p>
+          <label>
+            Sprache:
+            <select name="language">
+              <option value="de">Deutsch</option>
+              <option value="en">Englisch</option>
+              <option value="es">Spanisch</option>
+              <option value="fr">Französisch</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>
+            Kategorie(n):
+            <input
+              name="categories"
+              type="text"
+              required
+              pattern="^(?!.*,$)(?!.*,,)[^,]+(,[^,]+)*$"
+              placeholder="Kategorie eingeben"
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Beschreibung:
+            <textarea
+              name="description"
+              minlength="40"
+              placeholder="Beschreibung"
+            ></textarea>
+          </label>
+        </p>
+        <p>
+          <label>
+            Dauer:
+            <input
+              name="duration"
+              type="time"
+              min="00:20"
+              max="15:59"
+              required
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            Veröffentlichung (Datum):
+            <input name="date" type="date" required />
+          </label>
+        </p>
+        <p>
+          <label>
+            Type:
+            <select name="type">
+              <option value="url">Text-Tutorial</option>
+              <option value="video">Video-Tutorial</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>
+            Inhalt:
+            <input
+              name="content"
+              type="url"
+              required
+              placeholder="URL eingeben"
+            />
+          </label>
+        </p>
+        <button type="submit"><em>Abschicken</em></button>
+      </form>
+    </main>
+    <aside>
+      <h2>Neue Tutorials</h2>
+      <ul>
+        <li>
+          Titel: <strong>HTML - Der perfekte Einstieg</strong> - Datum: 12.
+          Februar 2025 - Dauer: 1 Std. 45 Min.
+        </li>
+        <li>
+          Titel:
+          <strong>Fortgeschrittenes HTML - Semantik und Best Practices</strong>
+          - Datum: 20. Februar 2025 - Dauer: 2 Std. 10 Min.
+        </li>
+        <li>
+          Titel: <strong>Interaktive Webseiten mit HTML und Forms</strong> -
+          Datum: 28. Februar 2025 - Dauer: 2 Std. 30 Min.
+        </li>
+      </ul>
+    </aside>
+    <footer>
+      <small>&copy; 2025 Alex</small>
+    </footer>
+  </body>
+</html>

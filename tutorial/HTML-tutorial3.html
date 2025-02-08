@@ -1,22 +1,83 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <title>Titel meiner Web-Seite</title>
+    <title>HTML Tutorial 3</title>
     <meta charset="utf-8" />
   </head>
 
   <body>
-    <header><h1>Web-Entwicklung</h1></header>
+    <header>
+      <img
+        src="../assets/img/Logo.png"
+        alt="Logo der Webseite."
+        width="80"
+        height="50"
+      />
+      <h1>Web-Entwicklung</h1>
+    </header>
+
     <nav>
       <a href="../list.html">Liste der Kategorien:</a>
       <a href="../tutorials/HTML-tutorials.html">Tutorials von HTML</a>
       <a href="../tutorial/HTML-tutorial1.html"> HTML Tutorial 1</a>
+      <a href="../form.html">Neues Tutorial erstellen</a>
     </nav>
     <main>
+      <figure>
+        <img
+          src="../assets/img/HTMLlogo.png"
+          alt="HTML Logo"
+          width="60"
+          height="60"
+        />
+        <figcaption>HTML Tutorial 3</figcaption>
+      </figure>
       <ul>
         <li>Titel: Interaktive Webseiten mit HTML und Forms</li>
         <li>Datum: 28. Februar 2025</li>
       </ul>
+      <video width="400" controls>
+        <source src="assets/test.mp4" type="video/mp4" />
+        <source src="assets/test.ogv" type="video/ogg" />
+        Ihr Browser unterstützt das video-Element nicht.
+      </video>
+      <table>
+        <thead>
+          <tr>
+            <th>Name des Kapitels:</th>
+            <th>Kurzbeschreibung des Kapitelinhalts:</th>
+            <th>Dauer des Kapitels in Minuten:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grundlagen von Forms</td>
+            <td>Aufbau und Struktur von Formularen</td>
+            <td>(35 Min.)</td>
+          </tr>
+          <tr>
+            <td>Eingabefelder & Buttons</td>
+            <td>Unterschiedliche Arten von Eingaben und Steuerungselementen</td>
+            <td>(40 Min.)</td>
+          </tr>
+          <tr>
+            <td>Formularvalidierung</td>
+            <td>Möglichkeiten zur Prüfung von Nutzereingaben</td>
+            <td>(40 Min.)</td>
+          </tr>
+          <tr>
+            <td>Best Practices</td>
+            <td>Tipps für benutzerfreundliche Formulare</td>
+            <td>(35 Min.)</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Gesamtdauer:</td>
+            <td>2 Std. 30 Min.</td>
+          </tr>
+        </tfoot>
+      </table>
     </main>
     <aside>
       <h2>Neue Tutorials</h2>

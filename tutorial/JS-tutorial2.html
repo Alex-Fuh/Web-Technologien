@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <title>Titel meiner Web-Seite</title>
+    <title>JS Tutorial 2</title>
     <meta charset="utf-8" />
   </head>
 
   <body>
-    <header><h1>Web-Entwicklung</h1></header>
+    <header>
+      <img
+        src="../assets/img/Logo.png"
+        alt="Logo der Webseite."
+        width="80"
+        height="50"
+      />
+      <h1>Web-Entwicklung</h1>
+    </header>
+
     <nav>
       <a href="../list.html">Liste der Kategorien:</a>
       <a href="../tutorials/HTML-tutorials.html">Tutorials von HTML</a>
       <a href="../tutorial/HTML-tutorial1.html"> HTML Tutorial 1</a>
+      <a href="../form.html">Neues Tutorial erstellen</a>
     </nav>
     <main>
+      <figure>
+        <img
+          src="../assets/img/JSlogo.png"
+          alt="Java Script Logo"
+          width="60"
+          height="60"
+        />
+        <figcaption>Java Script Tutorial 2</figcaption>
+      </figure>
       <ul>
         <li>Titel: Fortgeschrittenes JavaScript - Asynchrone Programmierung</li>
         <li>Datum: 12. April 2025</li>
       </ul>
+      <video width="400" controls>
+        <source src="assets/test.mp4" type="video/mp4" />
+        <source src="assets/test.ogv" type="video/ogg" />
+        Ihr Browser unterstützt das video-Element nicht.
+      </video>
     </main>
+    <table>
+      <thead>
+        <tr>
+          <th>Name des Kapitels:</th>
+          <th>Kurzbeschreibung des Kapitelinhalts:</th>
+          <th>Dauer des Kapitels in Minuten:</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Einführung in Asynchronität</td>
+          <td>Event Loop und Callbacks</td>
+          <td>(35 Min.)</td>
+        </tr>
+        <tr>
+          <td>Promises & Fetch API</td>
+          <td>Asynchrone Datenabfragen</td>
+          <td>(40 Min.)</td>
+        </tr>
+        <tr>
+          <td>Async/Await</td>
+          <td>Moderne und lesbare asynchrone Funktionen</td>
+          <td>(40 Min.)</td>
+        </tr>
+        <tr>
+          <td>Fehlermanagement</td>
+          <td>Umgang mit Fehlern in asynchronem Code</td>
+          <td>(35 Min.)</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Gesamtdauer:</td>
+          <td>2 Std. 30 Min.</td>
+        </tr>
+      </tfoot>
+    </table>
+
     <aside>
       <h2>Neue Tutorials</h2>
       <ul>

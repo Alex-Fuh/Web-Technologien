@@ -1,23 +1,84 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <title>Titel meiner Web-Seite</title>
+    <title>CSS Tutorial</title>
     <meta charset="utf-8" />
   </head>
 
   <body>
-    <header><h1>Web-Entwicklung</h1></header>
+    <header>
+      <img
+        src="../assets/img/Logo.png"
+        alt="Logo der Webseite."
+        width="80"
+        height="50"
+      />
+      <h1>Web-Entwicklung</h1>
+    </header>
+
     <nav>
       <a href="../list.html">Liste der Kategorien:</a>
       <a href="../tutorials/HTML-tutorials.html">Tutorials von HTML</a>
       <a href="../tutorial/HTML-tutorial1.html"> HTML Tutorial 1</a>
+      <a href="../form.html">Neues Tutorial erstellen</a>
     </nav>
     <main>
       <ul>
         <li>Titel: Animierte Webseiten mit CSS</li>
         <li>Datum: 25. März 2025</li>
       </ul>
+      <video width="400" controls>
+        <source src="assets/test.mp4" type="video/mp4" />
+        <source src="assets/test.ogv" type="video/ogg" />
+        Ihr Browser unterstützt das video-Element nicht.
+      </video>
+      <table>
+        <thead>
+          <tr>
+            <th>Name des Kapitels:</th>
+            <th>Kurzbeschreibung des Kapitelinhalts:</th>
+            <th>Dauer des Kapitels in Minuten:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grundlagen von Animationen</td>
+            <td>Unterschied zwischen Übergängen und Animationen</td>
+            <td>(25 Min.)</td>
+          </tr>
+          <tr>
+            <td>Transitions</td>
+            <td>Erstellung einfacher Effekte</td>
+            <td>(35 Min.)</td>
+          </tr>
+          <tr>
+            <td>Keyframe-Animationen</td>
+            <td>Komplexe Bewegungen definieren</td>
+            <td>(35 Min.)</td>
+          </tr>
+          <tr>
+            <td>Interaktive Animationen</td>
+            <td>Steuerung durch Nutzeraktionen</td>
+            <td>(35 Min.)</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Gesamtdauer:</td>
+            <td>2 Std. 10 Min.</td>
+          </tr>
+        </tfoot>
+      </table>
     </main>
+    <figure>
+      <img
+        src="../assets/img/CSSlogo.png"
+        alt="CSS Logo"
+        width="60"
+        height="60"
+      />
+      <figcaption>CSS Tutorial 3</figcaption>
+    </figure>
     <aside>
       <h2>Neue Tutorials</h2>
       <ul>
