@@ -1,0 +1,26 @@
+h1, h2 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  color: #4a4a4a;
+}
+body {
+  background-color: #fbebd3;
+}
+aside, #main-nav, table{
+  background-color: #f8e1c1;
+  border: 2px solid #d1b49c;
+  border-radius: 15px;
+}
+#main-nav{
+  text-align: center;
+}
+tbody tr:nth-child(odd){
+  background-color: #fbebd3;
+}
+thead, tfoot{
+  background-color:  #dac5a8;
+}
+a:hover{
+  color: blue;
+}
+
