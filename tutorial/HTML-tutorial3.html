@@ -4,6 +4,7 @@
     <title>HTML Tutorial 3</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/flexbox.css" />
   </head>
   <body>
     <div id="titel">
@@ -23,81 +24,89 @@
       <a href="../tutorial/HTML-tutorial1.html"> HTML Tutorial 1</a>
       <a href="../form.html">Neues Tutorial erstellen</a>
     </nav>
-    <main>
-      <figure>
-        <img
-          src="../assets/img/HTMLlogo.png"
-          alt="HTML Logo"
-          width="60"
-          height="60"
-        />
-        <figcaption>HTML Tutorial 3</figcaption>
-      </figure>
-      <ul>
-        <li>Titel: Interaktive Webseiten mit HTML und Forms</li>
-        <li>Datum: 28. Februar 2025</li>
-      </ul>
-      <video width="400" controls>
-        <source src="assets/test.mp4" type="video/mp4" />
-        <source src="assets/test.ogv" type="video/ogg" />
-        Ihr Browser unterstützt das video-Element nicht.
-      </video>
-      <table>
-        <thead>
-          <tr>
-            <th>Name des Kapitels:</th>
-            <th>Kurzbeschreibung des Kapitelinhalts:</th>
-            <th>Dauer des Kapitels in Minuten:</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Grundlagen von Forms</td>
-            <td>Aufbau und Struktur von Formularen</td>
-            <td>(35 Min.)</td>
-          </tr>
-          <tr>
-            <td>Eingabefelder & Buttons</td>
-            <td>Unterschiedliche Arten von Eingaben und Steuerungselementen</td>
-            <td>(40 Min.)</td>
-          </tr>
-          <tr>
-            <td>Formularvalidierung</td>
-            <td>Möglichkeiten zur Prüfung von Nutzereingaben</td>
-            <td>(40 Min.)</td>
-          </tr>
-          <tr>
-            <td>Best Practices</td>
-            <td>Tipps für benutzerfreundliche Formulare</td>
-            <td>(35 Min.)</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2">Gesamtdauer:</td>
-            <td>2 Std. 30 Min.</td>
-          </tr>
-        </tfoot>
-      </table>
-    </main>
-    <aside>
-      <h2>Neue Tutorials</h2>
-      <ul>
-        <li>
-          Titel: <strong>HTML - Der perfekte Einstieg</strong> - Datum: 12.
-          Februar 2025 - Dauer: 1 Std. 45 Min.
-        </li>
-        <li>
-          Titel:
-          <strong>Fortgeschrittenes HTML - Semantik und Best Practices</strong>
-          - Datum: 20. Februar 2025 - Dauer: 2 Std. 10 Min.
-        </li>
-        <li>
-          Titel: <strong>Interaktive Webseiten mit HTML und Forms</strong> -
-          Datum: 28. Februar 2025 - Dauer: 2 Std. 30 Min.
-        </li>
-      </ul>
-    </aside>
+    <div id="container">
+      <main>
+        <figure>
+          <img
+            src="../assets/img/HTMLlogo.png"
+            alt="HTML Logo"
+            width="60"
+            height="60"
+          />
+          <figcaption>HTML Tutorial 3</figcaption>
+        </figure>
+        <ul>
+          <li>Titel: Interaktive Webseiten mit HTML und Forms</li>
+          <li>Datum: 28. Februar 2025</li>
+        </ul>
+        <video width="400" controls>
+          <source src="assets/test.mp4" type="video/mp4" />
+          <source src="assets/test.ogv" type="video/ogg" />
+          Ihr Browser unterstützt das video-Element nicht.
+        </video>
+        <table>
+          <thead>
+            <tr>
+              <th>Name des Kapitels:</th>
+              <th>Kurzbeschreibung des Kapitelinhalts:</th>
+              <th>Dauer des Kapitels in Minuten:</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Grundlagen von Forms</td>
+              <td>Aufbau und Struktur von Formularen</td>
+              <td>(35 Min.)</td>
+            </tr>
+            <tr>
+              <td>Eingabefelder & Buttons</td>
+              <td>
+                Unterschiedliche Arten von Eingaben und Steuerungselementen
+              </td>
+              <td>(40 Min.)</td>
+            </tr>
+            <tr>
+              <td>Formularvalidierung</td>
+              <td>Möglichkeiten zur Prüfung von Nutzereingaben</td>
+              <td>(40 Min.)</td>
+            </tr>
+            <tr>
+              <td>Best Practices</td>
+              <td>Tipps für benutzerfreundliche Formulare</td>
+              <td>(35 Min.)</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Gesamtdauer:</td>
+              <td>2 Std. 30 Min.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </main>
+      <div id="sidecontainer">
+        <aside>
+          <h2>Neue Tutorials</h2>
+          <ul>
+            <li>
+              Titel: <strong>HTML - Der perfekte Einstieg</strong> - Datum: 12.
+              Februar 2025 - Dauer: 1 Std. 45 Min.
+            </li>
+            <li>
+              Titel:
+              <strong
+                >Fortgeschrittenes HTML - Semantik und Best Practices</strong
+              >
+              - Datum: 20. Februar 2025 - Dauer: 2 Std. 10 Min.
+            </li>
+            <li>
+              Titel: <strong>Interaktive Webseiten mit HTML und Forms</strong> -
+              Datum: 28. Februar 2025 - Dauer: 2 Std. 30 Min.
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
     <footer>
       <small>&copy; 2025 Alex</small>
     </footer>

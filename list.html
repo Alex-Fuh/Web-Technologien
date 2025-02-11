@@ -4,6 +4,8 @@
     <title>Web-Entwicklung</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/flexbox.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/tiles.css" />
   </head>
   <!-- body -->
   <body>
@@ -25,89 +27,90 @@
       <a href="form.html">Neues Tutorial erstellen</a>
     </nav>
     <div id="container">
-    <main>
-      <form
-        action="https://labs.inf.fh-dortmund.de/tutorialService/testTutorialSearch.php"
-        method="GET"
-      >
-        <fieldset>
-          <legend>Suche</legend>
-          <p>
-            <label
-              >Titel:
-              <input
-                name="search"
-                type="text"
-                required
-                minlength="4"
-                maxlength="20"
-                pattern="[A-ZÄÖÜ][0-9A-Za-zÄÖÜäöüß\s]*"
-                autofocus
-                placeholder="HTML Grundkurs 1"
-            /></label>
-          </p>
-          <p>
-            <button type="submit"><em>Suchen!</em></button>
-          </p>
-        </fieldset>
-      </form>
-      <nav>
-        <ol>
-          <li>
-            <a href="tutorials/HTML-tutorials.html"
-              ><img
-                src="assets/img/HTMLlogo.png"
-                alt="HTML Logo"
-                width="60"
-                height="60"
-              />HTML</a
-            >
-          </li>
-          <li>
-            <a href="tutorials/CSS-tutorials.html"
-              ><img
-                src="assets/img/CSSlogo.png"
-                alt="CSS Logo"
-                width="65"
-                height="65"
-              />CSS</a
-            >
-          </li>
-          <li>
-            <a href="tutorials/JS-tutorials.html"
-              ><img
-                src="assets/img/JSlogo.png"
-                alt="Java Script Logo"
-                width="65"
-                height="65"
-              />JS</a
-            >
-          </li>
-        </ol>
-      </nav>
-      <hr />
-    </main>
-    <div id="sidecontainer">
-    <aside>
-      <h2>Neue Tutorials</h2>
-      <ul>
-        <li>
-          Titel: <strong>HTML - Der perfekte Einstieg</strong> - Datum: 12.
-          Februar 2025 - Dauer: 1 Std. 45 Min.
-        </li>
-        <li>
-          Titel:
-          <strong>Fortgeschrittenes HTML - Semantik und Best Practices</strong>
-          - Datum: 20. Februar 2025 - Dauer: 2 Std. 10 Min.
-        </li>
-        <li>
-          Titel: <strong>Interaktive Webseiten mit HTML und Forms</strong> -
-          Datum: 28. Februar 2025 - Dauer: 2 Std. 30 Min.
-        </li>
-      </ul>
-    </aside>
+      <main>
+        <form
+          action="https://labs.inf.fh-dortmund.de/tutorialService/testTutorialSearch.php"
+          method="GET"
+        >
+          <fieldset>
+            <legend>Suche</legend>
+            <p>
+              <label
+                >Titel:
+                <input
+                  name="search"
+                  type="text"
+                  required
+                  minlength="4"
+                  maxlength="20"
+                  pattern="[A-ZÄÖÜ][0-9A-Za-zÄÖÜäöüß\s]*"
+                  autofocus
+                  placeholder="HTML Grundkurs 1"
+              /></label>
+            </p>
+            <p>
+              <button type="submit"><em>Suchen!</em></button>
+            </p>
+          </fieldset>
+        </form>
+        <nav>
+          <ul>
+            <li>
+              <a href="tutorials/HTML-tutorials.html"
+                ><img
+                  src="assets/img/HTMLlogo.png"
+                  alt="HTML Logo"
+                  width="155"
+                  height="155"
+                />HTML</a
+              >
+            </li>
+            <li>
+              <a href="tutorials/CSS-tutorials.html"
+                ><img
+                  src="assets/img/CSSlogo.png"
+                  alt="CSS Logo"
+                  width="155"
+                  height="155"
+                />CSS</a
+              >
+            </li>
+            <li>
+              <a href="tutorials/JS-tutorials.html"
+                ><img
+                  src="assets/img/JSlogo.png"
+                  alt="Java Script Logo"
+                  width="155"
+                  height="155"
+                />JS</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </main>
+      <div id="sidecontainer">
+        <aside>
+          <h2>Neue Tutorials</h2>
+          <ul>
+            <li>
+              Titel: <strong>HTML - Der perfekte Einstieg</strong> - Datum: 12.
+              Februar 2025 - Dauer: 1 Std. 45 Min.
+            </li>
+            <li>
+              Titel:
+              <strong
+                >Fortgeschrittenes HTML - Semantik und Best Practices</strong
+              >
+              - Datum: 20. Februar 2025 - Dauer: 2 Std. 10 Min.
+            </li>
+            <li>
+              Titel: <strong>Interaktive Webseiten mit HTML und Forms</strong> -
+              Datum: 28. Februar 2025 - Dauer: 2 Std. 30 Min.
+            </li>
+          </ul>
+        </aside>
+      </div>
     </div>
-  </div>
     <footer>
       <small>&copy; 2025 Alex</small>
     </footer>

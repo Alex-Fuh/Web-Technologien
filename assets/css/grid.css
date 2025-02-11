@@ -1,0 +1,19 @@
+body {
+
+    display: grid;
+    grid-template-areas: "header header"
+                         "mainNav mainNav"
+                         "main aside"
+                         "main aside"
+                         "footer footer";
+
+grid-template-columns: 70% 30%;
+
+}
+
+header { grid-area: header; }
+#main-nav { grid-area: mainNav; }
+aside { grid-area: aside; }
+footer { grid-area: footer; }
+main { grid-area: main; }
+
