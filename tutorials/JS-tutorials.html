@@ -7,15 +7,17 @@
   </head>
 
   <body>
-    <header>
-      <img
-        src="../assets/img/Logo.png"
-        alt="Logo der Webseite."
-        width="80"
-        height="50"
-      />
-      <h1>Web-Entwicklung</h1>
-    </header>
+    <div id="titel">
+      <header>
+        <img
+          src="../assets/img/Logo.png"
+          alt="Logo der Webseite."
+          width="50"
+          height="30"
+        />
+        <h1>Web-Entwicklung</h1>
+      </header>
+    </div>
     <nav id="main-nav">
       <a href="../list.html">Liste der Kategorien:</a>
       <a href="HTML-tutorials.html">Tutorials von HTML</a>
@@ -23,90 +25,92 @@
       <a href="../form.html">Neues Tutorial erstellen</a>
     </nav>
     <main>
-      <section>
-        <figure>
-          <img
-            src="../assets/img/JSlogo.png"
-            alt="Java Script Logo"
-            width="65"
-            height="65"
-          />
-          <figcaption>Java Script Tutorial 1</figcaption>
-        </figure>
-        <ul>
-          <li>
-            Titel:<a href="../tutorial/JS-tutorial1.html">
-              <strong>JavaScript - Der perfekte Einstieg</strong></a
-            >
-          </li>
-          <li>Datum: 5. April 2025</li>
-          <li>Dauer: 2 Std. 15 Min.</li>
-          <li>
-            Beschreibung: In diesem Tutorial lernst du die Grundlagen von
-            JavaScript, um interaktive Webseiten zu erstellen. Wir behandeln
-            Variablen, Funktionen, Events und die Manipulation des DOMs. Perfekt
-            für Einsteiger!
-          </li>
-        </ul>
-      </section>
-      <section>
-        <figure>
-          <img
-            src="../assets/img/JSlogo.png"
-            alt="Java Script Logo"
-            width="65"
-            height="65"
-          />
-          <figcaption>Java Script Tutorial 1</figcaption>
-        </figure>
-        <ul>
-          <li>
-            Titel:
-            <a href="../tutorial/JS-tutorial2.html">
-              <strong
-                >Fortgeschrittenes JavaScript - Asynchrone
-                Programmierung</strong
-              ></a
-            >
-          </li>
-          <li>Datum: 12. April 2025</li>
-          <li>Dauer: 2 Std. 30 Min.</li>
-          <li>
-            Beschreibung: Dieses Tutorial zeigt dir, wie du mit Promises,
-            async/await und Fetch-API effiziente, asynchrone
-            JavaScript-Anwendungen erstellst. Ideal für fortgeschrittene Nutzer,
-            die ihre Fähigkeiten ausbauen möchten.
-          </li>
-        </ul>
-      </section>
-      <section>
-        <figure>
-          <img
-            src="../assets/img/JSlogo.png"
-            alt="Java Script Logo"
-            width="65"
-            height="65"
-          />
-          <figcaption>Java Script Tutorial 1</figcaption>
-        </figure>
-        <ul>
-          <li>
-            Titel:
-            <a href="../tutorial/JS-tutorial3.html">
-              <strong>JavaScript für dynamische Webanwendungen</strong></a
-            >
-          </li>
-          <li>Datum: 19. April 2025</li>
-          <li>Dauer: 2 Std. 45 Min.</li>
-          <li>
-            Beschreibung: Hier lernst du, wie du mit JavaScript dynamische und
-            interaktive Webseiten baust. Wir behandeln Event-Handling, lokale
-            Speicherung und die Integration mit APIs, um moderne Webanwendungen
-            zu entwickeln.
-          </li>
-        </ul>
-      </section>
-      <hr />
+      <div id="tutorials">
+        <section class="tutorials">
+          <figure>
+            <img
+              src="../assets/img/JSlogo.png"
+              alt="Java Script Logo"
+              width="65"
+              height="65"
+            />
+            <figcaption>Java Script Tutorial 1</figcaption>
+          </figure>
+          <ul>
+            <li>
+              Titel:<a href="../tutorial/JS-tutorial1.html">
+                <strong>JavaScript - Der perfekte Einstieg</strong></a
+              >
+            </li>
+            <li>Datum: 5. April 2025</li>
+            <li>Dauer: 2 Std. 15 Min.</li>
+            <li>
+              Beschreibung: In diesem Tutorial lernst du die Grundlagen von
+              JavaScript, um interaktive Webseiten zu erstellen. Wir behandeln
+              Variablen, Funktionen, Events und die Manipulation des DOMs.
+              Perfekt für Einsteiger!
+            </li>
+          </ul>
+        </section>
+        <section class="tutorials">
+          <figure>
+            <img
+              src="../assets/img/JSlogo.png"
+              alt="Java Script Logo"
+              width="65"
+              height="65"
+            />
+            <figcaption>Java Script Tutorial 1</figcaption>
+          </figure>
+          <ul>
+            <li>
+              Titel:
+              <a href="../tutorial/JS-tutorial2.html">
+                <strong
+                  >Fortgeschrittenes JavaScript - Asynchrone
+                  Programmierung</strong
+                ></a
+              >
+            </li>
+            <li>Datum: 12. April 2025</li>
+            <li>Dauer: 2 Std. 30 Min.</li>
+            <li>
+              Beschreibung: Dieses Tutorial zeigt dir, wie du mit Promises,
+              async/await und Fetch-API effiziente, asynchrone
+              JavaScript-Anwendungen erstellst. Ideal für fortgeschrittene
+              Nutzer, die ihre Fähigkeiten ausbauen möchten.
+            </li>
+          </ul>
+        </section>
+        <section class="tutorials">
+          <figure>
+            <img
+              src="../assets/img/JSlogo.png"
+              alt="Java Script Logo"
+              width="65"
+              height="65"
+            />
+            <figcaption>Java Script Tutorial 1</figcaption>
+          </figure>
+          <ul>
+            <li>
+              Titel:
+              <a href="../tutorial/JS-tutorial3.html">
+                <strong>JavaScript für dynamische Webanwendungen</strong></a
+              >
+            </li>
+            <li>Datum: 19. April 2025</li>
+            <li>Dauer: 2 Std. 45 Min.</li>
+            <li>
+              Beschreibung: Hier lernst du, wie du mit JavaScript dynamische und
+              interaktive Webseiten baust. Wir behandeln Event-Handling, lokale
+              Speicherung und die Integration mit APIs, um moderne
+              Webanwendungen zu entwickeln.
+            </li>
+          </ul>
+        </section>
+        <hr />
+      </div>
     </main>
     <aside>
       <h2>Neue Tutorials</h2>

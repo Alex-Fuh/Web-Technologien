@@ -7,15 +7,17 @@
   </head>
 
   <body>
-    <header>
-      <img
-        src="../assets/img/Logo.png"
-        alt="Logo der Webseite."
-        width="80"
-        height="50"
-      />
-      <h1>Web-Entwicklung</h1>
-    </header>
+    <div id="titel">
+      <header>
+        <img
+          src="../assets/img/Logo.png"
+          alt="Logo der Webseite."
+          width="50"
+          height="30"
+        />
+        <h1>Web-Entwicklung</h1>
+      </header>
+    </div>
     <nav id="main-nav">
       <a href="../list.html">Liste der Kategorien:</a>
       <a href="HTML-tutorials.html">Tutorials von HTML</a>
@@ -23,92 +25,95 @@
       <a href="../form.html">Neues Tutorial erstellen</a>
     </nav>
     <main>
-      <section>
-        <figure>
-          <img
-            src="../assets/img/HTMLlogo.png"
-            alt="HTML Logo"
-            width="60"
-            height="60"
-          />
-          <figcaption>HTML Tutorial 1</figcaption>
-        </figure>
-        <ul>
-          <li>
-            Titel:
-            <a href="../tutorial/HTML-tutorial1.html"
-              ><strong>HTML - Der perfekte Einstieg</strong></a
-            >
-          </li>
-          <li>Datum: 12. Februar 2025</li>
-          <li>Dauer: 1 Std. 45 Min.</li>
-          <li>
-            Beschreibung: Dieses Tutorial führt dich Schritt für Schritt in die
-            Grundlagen von HTML ein. Du lernst, wie du eine Webseite von Grund
-            auf erstellst, Struktur-Elemente wie
-            <strong>header, main, footer </strong> einsetzt und erste Texte
-            sowie Bilder einfügst. Perfekt für Anfänger!
-          </li>
-        </ul>
-      </section>
-      <section>
-        <figure>
-          <img
-            src="../assets/img/HTMLlogo.png"
-            alt="HTML Logo"
-            width="60"
-            height="60"
-          />
-          <figcaption>HTML Tutorial 2</figcaption>
-        </figure>
-        <ul>
-          <li>
-            Titel:
-            <a href="../tutorial/HTML-tutorial2.html">
-              <strong
-                >Fortgeschrittenes HTML - Semantik und Best Practices</strong
-              ></a
-            >
-          </li>
-          <li>Datum: 20. Februar 2025</li>
-          <li>Dauer: 2 Std. 10 Min.</li>
-          <li>
-            In diesem Tutorial geht es um sauberes, semantisches HTML. Du
-            erfährst, welche HTML-Tags die beste Wahl für bestimmte Inhalte
-            sind, wie du Barrierefreiheit (Accessibility) verbesserst und welche
-            Best Practices du für professionellen Code beachten solltest.
-          </li>
-        </ul>
-      </section>
-      <section>
-        <figure>
-          <img
-            src="../assets/img/HTMLlogo.png"
-            alt="HTML Logo"
-            width="60"
-            height="60"
-          />
-          <figcaption>HTML Tutorial 3</figcaption>
-        </figure>
-        <ul>
-          <li>
-            Titel:
-            <a href="../tutorial/HTML-tutorial3.html">
-              <strong>Interaktive Webseiten mit HTML und Forms</strong></a
-            >
-          </li>
-          <li>Datum: 28. Februar 2025</li>
-          <li>Dauer: 2 Std. 30 Min.</li>
-          <li>
-            Hier lernst du, wie du interaktive Formulare mit HTML erstellst. Wir
-            gehen auf Formularelemente wie
-            <strong>input, select, textarea, button </strong>ein und zeigen dir,
-            wie du Validierungen hinzufügst und die Benutzererfahrung
-            optimierst.
-          </li>
-        </ul>
-      </section>
-      <hr />
+      <div id="tutorials">
+        <section class="tutorials">
+          <figure>
+            <img
+              src="../assets/img/HTMLlogo.png"
+              alt="HTML Logo"
+              width="60"
+              height="60"
+            />
+            <figcaption>HTML Tutorial 1</figcaption>
+          </figure>
+          <ul>
+            <li>
+              Titel:
+              <a href="../tutorial/HTML-tutorial1.html"
+                ><strong>HTML - Der perfekte Einstieg</strong></a
+              >
+            </li>
+            <li>Datum: 12. Februar 2025</li>
+            <li>Dauer: 1 Std. 45 Min.</li>
+            <li>
+              Beschreibung: Dieses Tutorial führt dich Schritt für Schritt in
+              die Grundlagen von HTML ein. Du lernst, wie du eine Webseite von
+              Grund auf erstellst, Struktur-Elemente wie
+              <strong>header, main, footer </strong> einsetzt und erste Texte
+              sowie Bilder einfügst. Perfekt für Anfänger!
+            </li>
+          </ul>
+        </section>
+        <section class="tutorials">
+          <figure>
+            <img
+              src="../assets/img/HTMLlogo.png"
+              alt="HTML Logo"
+              width="60"
+              height="60"
+            />
+            <figcaption>HTML Tutorial 2</figcaption>
+          </figure>
+          <ul>
+            <li>
+              Titel:
+              <a href="../tutorial/HTML-tutorial2.html">
+                <strong
+                  >Fortgeschrittenes HTML - Semantik und Best Practices</strong
+                ></a
+              >
+            </li>
+            <li>Datum: 20. Februar 2025</li>
+            <li>Dauer: 2 Std. 10 Min.</li>
+            <li>
+              In diesem Tutorial geht es um sauberes, semantisches HTML. Du
+              erfährst, welche HTML-Tags die beste Wahl für bestimmte Inhalte
+              sind, wie du Barrierefreiheit (Accessibility) verbesserst und
+              welche Best Practices du für professionellen Code beachten
+              solltest.
+            </li>
+          </ul>
+        </section>
+        <section class="tutorials">
+          <figure>
+            <img
+              src="../assets/img/HTMLlogo.png"
+              alt="HTML Logo"
+              width="60"
+              height="60"
+            />
+            <figcaption>HTML Tutorial 3</figcaption>
+          </figure>
+          <ul>
+            <li>
+              Titel:
+              <a href="../tutorial/HTML-tutorial3.html">
+                <strong>Interaktive Webseiten mit HTML und Forms</strong></a
+              >
+            </li>
+            <li>Datum: 28. Februar 2025</li>
+            <li>Dauer: 2 Std. 30 Min.</li>
+            <li>
+              Hier lernst du, wie du interaktive Formulare mit HTML erstellst.
+              Wir gehen auf Formularelemente wie
+              <strong>input, select, textarea, button </strong>ein und zeigen
+              dir, wie du Validierungen hinzufügst und die Benutzererfahrung
+              optimierst.
+            </li>
+          </ul>
+        </section>
+        <hr />
+      </div>
     </main>
     <aside>
       <h2>Neue Tutorials</h2>

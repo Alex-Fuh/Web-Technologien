@@ -4,18 +4,21 @@
     <title>Neues Tutorial</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/forms.css" />
   </head>
 
   <body>
-    <header>
-      <img
-        src="assets/img/Logo.png"
-        alt="Logo der Webseite."
-        width="80"
-        height="50"
-      />
-      <h1>Web-Entwicklung</h1>
-    </header>
+    <div id="titel">
+      <header>
+        <img
+          src="assets/img/Logo.png"
+          alt="Logo der Webseite."
+          width="50"
+          height="30"
+        />
+        <h1>Web-Entwicklung</h1>
+      </header>
+    </div>
     <nav id="main-nav">
       <a href="list.html">Liste der Kategorien:</a>
       <a href="tutorials/HTML-tutorials.html">Tutorials von HTML</a>
@@ -27,89 +30,98 @@
         action="https://labs.inf.fh-dortmund.de/tutorialService/testCreateTutorial.php"
         method="GET"
       >
-        <p>
-          <label
-            >Titel:
-            <input
-              type="text"
-              required
-              minlength="4"
-              maxlength="20"
-              pattern="[A-Z][a-z]*"
-              placeholder="HTML - Der perfekte Einstieg"
-          /></label>
-        </p>
-        <p>
-          <label>
-            Sprache:
-            <select name="language">
-              <option value="de">Deutsch</option>
-              <option value="en">Englisch</option>
-              <option value="es">Spanisch</option>
-              <option value="fr">Französisch</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            Kategorie(n):
-            <input
-              name="categories"
-              type="text"
-              required
-              pattern="^(?!.*,$)(?!.*,,)[^,]+(,[^,]+)*$"
-              placeholder="Kategorie eingeben"
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Beschreibung:
-            <textarea
-              name="description"
-              minlength="40"
-              placeholder="Beschreibung"
-            ></textarea>
-          </label>
-        </p>
-        <p>
-          <label>
-            Dauer:
-            <input
-              name="duration"
-              type="time"
-              min="00:20"
-              max="15:59"
-              required
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            Veröffentlichung (Datum):
-            <input name="date" type="date" required />
-          </label>
-        </p>
-        <p>
-          <label>
-            Type:
-            <select name="type">
-              <option value="url">Text-Tutorial</option>
-              <option value="video">Video-Tutorial</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            Inhalt:
-            <input
-              name="content"
-              type="url"
-              required
-              placeholder="URL eingeben"
-            />
-          </label>
-        </p>
+        <fieldset>
+          <legend>Tutorialinformationen</legend>
+          <p>
+            <label
+              >Titel:
+              <input
+                type="text"
+                required
+                minlength="4"
+                maxlength="20"
+                pattern="[A-Z][a-z]*"
+                placeholder="HTML - Der perfekte Einstieg"
+            /></label>
+          </p>
+          <p>
+            <label>
+              Sprache:
+              <select name="language">
+                <option value="de">Deutsch</option>
+                <option value="en">Englisch</option>
+                <option value="es">Spanisch</option>
+                <option value="fr">Französisch</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Kategorie(n):
+              <input
+                name="categories"
+                type="text"
+                required
+                pattern="^(?!.*,$)(?!.*,,)[^,]+(,[^,]+)*$"
+                placeholder="Kategorie eingeben"
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Beschreibung:
+              <textarea
+                name="description"
+                minlength="40"
+                placeholder="Beschreibung"
+              ></textarea>
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Zeitliche Rahmenbedingungen</legend>
+          <p>
+            <label>
+              Dauer:
+              <input
+                name="duration"
+                type="time"
+                min="00:20"
+                max="15:59"
+                required
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Veröffentlichung (Datum):
+              <input name="date" type="date" required />
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Tutorial Typ</legend>
+          <p>
+            <label>
+              Type:
+              <select name="type">
+                <option value="url">Text-Tutorial</option>
+                <option value="video">Video-Tutorial</option>
+              </select>
+            </label>
+          </p>
+          <p>
+            <label>
+              Inhalt:
+              <input
+                name="content"
+                type="url"
+                required
+                placeholder="URL eingeben"
+              />
+            </label>
+          </p>
+        </fieldset>
         <button type="submit"><em>Abschicken</em></button>
       </form>
     </main>

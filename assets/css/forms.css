@@ -1,0 +1,28 @@
+input:invalid,
+textarea:invalid {
+  border-bottom: 2px solid #ff4d4d;
+}
+label:has(input:required)::after {
+  content: "(Erforderliche Eingabe)";
+  font-size: small;
+}
+fieldset {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  margin: 20px 0 0;
+}
+legend {
+  border-radius: 5px;
+  background-color: #f8e1c1;
+  border-top: 2px solid #d1b49c;
+  border-bottom: 2px solid #d1b49c;
+}
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+input:required {
+  border-left: 1px solid black;
+}

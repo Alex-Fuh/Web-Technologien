@@ -1,26 +1,61 @@
-h1, h2 {
+body {
   font-family: Helvetica, Arial, sans-serif;
+  margin-top: 0px;
+}
+h1,
+h2 {
   font-style: italic;
   color: #4a4a4a;
 }
 body {
   background-color: #fbebd3;
 }
-aside, #main-nav, table{
+aside,
+#main-nav,
+table,
+section {
   background-color: #f8e1c1;
   border: 2px solid #d1b49c;
   border-radius: 15px;
+  margin: 25px 0;
 }
-#main-nav{
+#main-nav {
   text-align: center;
 }
-tbody tr:nth-child(odd){
+#main-nav {
+  margin: 20px 0;
+  padding: 10px 0;
+  box-shadow: 7px 4px 7px grey;
+}
+#main-nav a {
+  padding: 5px;
+}
+tbody tr:nth-child(odd) {
   background-color: #fbebd3;
 }
-thead, tfoot{
-  background-color:  #dac5a8;
+thead,
+tfoot {
+  background-color: #dac5a8;
 }
-a:hover{
+a:hover {
   color: blue;
 }
+footer {
+  position: fixed;
+  bottom: 10px;
+}
+
+.tutorials figure {
+  float: left;
+  margin-right: 15px;
+}
+header h1 {
+  display: inline;
+  margin-top: 0px;
+
+}
+#titel {
+ text-align: center;
+}
+
 
